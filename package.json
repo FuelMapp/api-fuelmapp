@@ -1,0 +1,33 @@
+{
+  "name": "api-fuelmapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^2.6.9",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.20.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.11.17",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "DEBUG=* ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FuelMapp/api-fuelmapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FuelMapp/api-fuelmapp/issues"
+  },
+  "homepage": "https://github.com/FuelMapp/api-fuelmapp#readme"
+}
