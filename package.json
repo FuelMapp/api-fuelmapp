@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "DEBUG=* ./bin/www"
+    "dev": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/FuelMapp/api-fuelmapp/issues"
   },
-  "homepage": "https://github.com/FuelMapp/api-fuelmapp#readme"
+  "homepage": "https://github.com/FuelMapp/api-fuelmapp#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

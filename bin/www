@@ -1,7 +1,4 @@
-#!/usr/bin/env node
-
 const app = require('../app');
-const debug = require('debug')('api-fuelmapp:server');
 const http = require('http');
 const {normalizePort} = require('../utils')
 
@@ -48,5 +45,4 @@ function onListening() {
   const bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
 }
