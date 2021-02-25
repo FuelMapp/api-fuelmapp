@@ -17,6 +17,8 @@ app.use(express.urlencoded({ extended: false }));
 
 // Route requests
 const routes = require('./routes')
+const handleHttpErrors = require('./middlewares/handleError.js')
 app.use('/users', routes.users)
+app.use(handleHttpErrors)
 
 module.exports = app;
