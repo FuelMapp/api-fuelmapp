@@ -24,14 +24,3 @@ exports.createUser = async (req, res, next) => {
 	next(err)
     }
 }
-
-exports.updateUser = async (req, res, next) => {
-    const {user: currentUser} = req.session
-    const {username, email, password} = req.body
-
-    try {
-    }
-    catch {
-
-    }
-}
