@@ -1,8 +1,10 @@
 const User = require('../models/users.js')
 
 exports.getUsers = async (req, res, next) => {
+    const query = req.query || {}
+
     try {
-	const users = await User.find()
+	const users = await User.find(query)
 	res.json(users)
     }
     catch (err) {
@@ -18,7 +20,18 @@ exports.createUser = async (req, res, next) => {
 	res.json(newUser)
     }
     catch (err) {
-	err.status = 422
+	err.status = 400
 	next(err)
+    }
+}
+
+exports.updateUser = async (req, res, next) => {
+    const {user: currentUser} = req.session
+    const {username, email, password} = req.body
+
+    try {
+    }
+    catch {
+
     }
 }
