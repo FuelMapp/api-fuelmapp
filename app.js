@@ -3,6 +3,7 @@ require('./config/db.js')
 const express = require('express');
 const logger = require('morgan');
 const cors = require('cors')
+const session = require('./config/session.js')
 const app = express();
 
 
@@ -14,6 +15,7 @@ if (isDev) {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(session)
 
 // Route requests
 const routes = require('./routes')

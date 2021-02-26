@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "connect-mongo": "^4.2.0",
     "cors": "^2.8.5",
     "debug": "^2.6.9",
     "dotenv": "^8.2.0",
